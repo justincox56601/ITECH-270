@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Example</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        p{
+            margin-bottom:0.5rem;
+        }
+        section{
+            margin-bottom:2rem;
+            padding: 1rem;
+            border:1px solid black;
+
+        }
+        article{
+            margin-bottom:1rem;
+            padding: 1rem;
+            border:1px solid black;
+        }
+        h2{
+            text-align: center;
+        }
+        .section-highlight,
+        .article-highlight,
+        .heading-highlight,
+        .paragraph-highlight,
+        .anchor-highlight{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--This page uses css to show semantic structuring-->
+    <header>
+        <h1>Semantic HTML Example</h1>   
+    </header>
+    <div class="container">
+        <section class="section-highlight">
+            <h2>SECTION</h2>
+            <p>This is a section.  It is a logical portion of the web page.  Everything within the section logically belongs together.  usually a section will contain a section header in addition to its content.</p>
+            <div class="codeblock">
+                <code>
+                    &lt;section&gt;<br>
+                        &ensp;&lt;h2&gt;About&ensp;&lt;/h2&gt;<br>
+                        &ensp;&lt;p&gt;This is a section.  It is a logical portion of the web page...&ensp;&lt;/p&gt;<br>
+                    &lt;/section&gt;<br>
+                    
+                </code>
+            </div>
+        </section>
+        <section>
+            <h2>SECTION</h2>
+            <article class="article-highlight">
+                <h3>Article</h3>
+                <p>This is an article.  Articles are like sections but specifically used for bog articles  They are indepentdent self-contained pieces of content.</p>
+                <a href="#">Read More...</a>
+                <div class="codeblock">
+                    <code>
+                        &lt;article&gt;<br>
+                            &ensp;&lt;h3&gt;Article&lt;/h3&gt;<br>
+                            &ensp;&lt;p&gt;This is an article.  Articles are like sections...&lt;/p&gt;<br>
+                        &lt;/article&gt;<br>
+                        
+                    </code>
+                </div>
+            </article>
+            <article>
+                <h3 class="heading-highlight">Headings</h3>
+                <p>This is a heading.  Specifically this is an h3 heading.  Headings range from h1 to h6.  H1 is the most important heading of the page.  There should only be a single h1 on a page, and that is usually reserved for the page title.  h2 is generally used for section titles.  While h3 through h6 are used for articles and other headings of less importance.</p>
+                <a href="#">Read More...</a>
+                <div class="codeblock">
+                    <code>
+                        &lt;h3&gt;Headings&lt;/h3&gt;<br>
+                    </code>
+                </div>
+            </article>
+            <article>
+                <h3>Paragraphs</h3>
+                <p class="paragraph-highlight">This is a paragraph block.  This tag is used for your normal content / text.  Probably the single most common tag you will use.</p>
+                <a href="#">Read More...</a>
+                <div class="codeblock">
+                     <code>
+                        &lt;p&gt;This is a paragraph block.  This tag is used...&lt;/p&gt;<br>
+                    </code>
+                </div>
+            </article>
+            <article>
+                <h3>Anchor Tags / Links</h3>
+                <p>This is an anchor tag or a link.  These are used for navigating the user to another page or part of the page. They are often styled to look like buttons.  But buttons are technically different and used for different things.</p>
+                <a class="anchor-highlight" href="#">Read More...</a>
+                <div class="codeblock">
+                    <code>
+                       &lt;a href="#"&gt;Read More...&lt;/a&gt;<br>
+                   </code>
+               </div>
+            </article>
+        </section>
+        <section>
+            <h2>Example Semantic HTML</h2>
+            <div class="codeblock">
+                <code>
+                    &lt;section&gt;<br>
+                        &ensp;&lt;h2&gt;About&ensp;&lt;/h2&gt;<br>
+                        &ensp;&lt;p&gt;This is some about me information...&ensp;&lt;/p&gt;<br>
+                    &lt;/section&gt;<br>
+                    &lt;section&gt;<br>
+                        &ensp;&lt;h2&gt;blog&ensp;&lt;/h2&gt;<br>
+                        &ensp;&lt;article&gt;<br>
+                            &ensp;&ensp;&lt;h3&gt;Article&lt;/h3&gt;<br>
+                            &ensp;&ensp;&lt;p&gt;This is an article.  Articles are like sections...&lt;/p&gt;<br>
+                            &ensp;&ensp;&lt;a href="#"&gt;Read More...&lt;/a&gt;<br>
+                        &ensp;&lt;/article&gt;<br>
+                        &ensp;&lt;article&gt;<br>
+                            &ensp;&ensp;&lt;h3&gt;Article&lt;/h3&gt;<br>
+                            &ensp;&ensp;&lt;p&gt;This is an article.  Articles are like sections...&lt;/p&gt;<br>
+                            &ensp;&ensp;&lt;a href="#"&gt;Read More...&lt;/a&gt;<br>
+                        &ensp;&ensp;&lt;/article&gt;<br>
+                        &ensp;&lt;article&gt;<br>
+                            &ensp;&ensp;&lt;h3&gt;Article&lt;/h3&gt;<br>
+                            &ensp;&ensp;&lt;p&gt;This is an article.  Articles are like sections...&lt;/p&gt;<br>
+                            &ensp;&ensp;&lt;a href="#"&gt;Read More...&lt;/a&gt;<br>
+                        &ensp;&lt;/article&gt;<br>
+                    &lt;/section&gt;<br>
+                </code>
+            </div>
+        </section>
+       
+    </div>
+</body>
+</html>

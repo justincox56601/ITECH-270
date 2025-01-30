@@ -1,0 +1,53 @@
+some tags have attributes
+attributes provide additional information about elements
+attributes change the functionality of an html tag
+attributes are ALWAYS specificed in the start Tag
+Attributes usually come in name/value pairs like name="value"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 4rem
+        }
+        .button-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap:1rem
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Attributes</h1>
+    </header>
+    <div class="container">
+        <p>Attributes are usually name/value pairs that add addtional information to html tags.  All tags accept at least a few attributes, while some require them.</p>
+        <p>A very common attribute is the style attribute. <code><span style="color:red;">style="color:red;"</span></code> is an example of the style tag used for css.</p>
+        <p>Attributes are ALWAYS specified in the starting / opening tag <code>&lt;span style="color:red;"&gt;<span style="color:red;">This text is colored red.</span>&lt;/span&gt;</code></p>
+        <p>anchor tags are an example of a tag that requires attritbutes to work correctly.  <code>&lt;a href="https://google.com"&gt;Click here to go to Google&lt;/a&gt;</code> In the anchor tag we MUST supply the href attribute so the link can properly direct the user to the destination.</p>
+        <p>While most attributes are in the name/value format, not all of them are.  For example the 'disabled' attribute for buttons is a stand alone attribute.  The two buttons below are identical except for the 'disabled' attribute is added to the second one.  Notice how you cannot click it.</p>
+        <div class="buttons">
+            <div class="button-div">
+                <button>Click Me</button>
+                <code>&lt;button&gt;:Click Me&lt;/button&gt;</code>
+            </div>
+            <div class="button-div">
+                <button disabled>Click Me</button>
+                <code>&lt;button disabled&gt;:Click Me&lt;/button&gt;</code>
+            </div>
+        </div>
+
+        <a href="../justin.cox_timesheet_01.25.25.pdf" target="_blank" rel="noopener noreferrer">click me</a>
+    </div>
+</body>
+</html>
