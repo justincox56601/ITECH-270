@@ -67,3 +67,11 @@ header{
 article{
     margin-left:2rem; 
 }
+
+.callout{
+    width: 70%;
+    margin-left: 15%;
+    background-color: lightgray;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}

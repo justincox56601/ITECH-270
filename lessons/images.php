@@ -1,5 +1,5 @@
 <?php
-$title = "Images and Videos";
+$title = "Images";
 $DIR = dirname(__FILE__, 2);
 $BASE_URL = (isset($_SERVER['HTTPS']) && $_SEVER['HTTPS'] === 'on') ? 'https://' : 'http://';
 $BASE_URL .= $_SERVER['HTTP_HOST'];
@@ -10,10 +10,10 @@ include_once $DIR .'/nav.php';
 ?>
 <div class="container">
     <section>
-        <h2>What are Image and Video Tags</h2>
-        <p>Image and video tags are a special type of tag used to embed media into a webpage. Like anchor tags, they require several attributes to function properly.</p>
+        <h2>What are Image Tags</h2>
+        <p>Image tags are a special type of tag used to embed media into a webpage. Like anchor tags, they require several attributes to function properly.</p>
         <article>
-            <h3>Img Attribute</h3>
+            <h3>Img Tag</h3>
             <p>The img tag is for embedding images into a webpage. It requires the 'src' attribute. It is also our first example of an html tag that does not come in a pair. This is becuase the 'src' attribute defines the content of the image, therefore there is no need for a content area between the tags.</p>
             <div class="two-column">
                 <code>&lt;img src="#"&gt;</code>
